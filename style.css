@@ -32,13 +32,35 @@ h1 {
     margin-bottom: 200px;
 }
 
+@keyframes gradientAnimation {
+    0% {
+        color: orange;
+    }
+
+    25 % {
+        color: orangered;
+    }
+
+    50% {
+        color: red;
+    }
+
+    75% {
+        color: orangered;
+    }
+
+    100% {
+        color: orange;
+    }
+}
+
 .course_name {
     display: flex;
     justify-content: center;
     margin: 50px 0;
     font-family: 'Black Ops One', sans-serif;
     font-size: 2em;
-    color: orange;
+    animation: gradientAnimation 3s ease infinite;
 }
 
 .course_block {
